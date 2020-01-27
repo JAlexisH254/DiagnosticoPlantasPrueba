@@ -32,16 +32,16 @@ class predict_class():
         self.load_model()
 
     def init_idx_dict(self):
-        self.idx_to_name[28] = "Tomato Bacterial Spot"
-        self.idx_to_name[29] = "Tomato Early Blight"
-        self.idx_to_name[30] = "Tomato Late Blight"
-        self.idx_to_name[31] = "Tomato Leaf Mold"
-        self.idx_to_name[32] = "Tomato Septoria Leaf Spot"
-        self.idx_to_name[33] = "Tomato Spider mites Two-spotted spider mite"
-        self.idx_to_name[34] = "Tomato Target Spot"
-        self.idx_to_name[35] = "Tomato yellow leaf curl virus"
-        self.idx_to_name[36] = "Tomato Mosaic Virus"
-        self.idx_to_name[37] = "Healthy"
+        self.idx_to_name[28] = "Tomate Mancha Bacteriana"
+        self.idx_to_name[29] = "Tomate Tizón Temprano"
+        self.idx_to_name[30] = "Tomate Tizón Tardío"
+        self.idx_to_name[31] = "Tomate Molde de la hoja"
+        self.idx_to_name[32] = "Tomate Mancha Foliar Septoria"
+        self.idx_to_name[33] = "Tomate Acaro araña de dos puntos"
+        self.idx_to_name[34] = "Tomate Punto objetivo"
+        self.idx_to_name[35] = "Tomate virus del enrollamiento de la hoja amarilla"
+        self.idx_to_name[36] = "Tomate Virus Mosaico"
+        self.idx_to_name[37] = "Sano"
     
     def load_model(self):   # Function to load pre-trained Squeeze Net model
         filename = os.path.join(self.home_path, "saved_models/plant_village/Plant_Village_saved_model_Squeeze_Net.pth.tar")      # Loading for testing

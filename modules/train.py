@@ -179,6 +179,7 @@ def train(net, trainloader, param_list=None, epochs=15):
             # get the inputs
             inputs, labels = data
             if use_gpu:
+                # modificado
                 inputs, labels = Variable(inputs.cuda()), Variable(labels.cuda(async=True))
             else:
                 inputs, labels = Variable(inputs), Variable(labels)
