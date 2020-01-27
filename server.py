@@ -13,4 +13,4 @@ def postHandler():
     imagefile.save(filename)
     return pred.predict(filename)
 
-app.run(host='127.0.0.1', port=8000, debug=True)
+app.run(host='127.0.0.1', port=80, debug=True)
